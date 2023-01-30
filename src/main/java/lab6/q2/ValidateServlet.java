@@ -17,11 +17,20 @@ public class ValidateServlet extends HttpServlet {
         String password = request.getParameter("password");
         PrintWriter out = response.getWriter();
         try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student-registration", "root", "")) {
-            PreparedStatement ps = con.prepareStatement("select * from student where username=? and password=?");
+            PreparedStatement ps = con.prepareStatement("select * from student where username=? and password=?", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             ps.setString(1,username);
             ps.setString(2,password);
             ResultSet rs = ps.executeQuery();
-            out.println(rs.isLast());
+            rs.last();
+            if(0 == rs.getRow()){
+                out.println("Sorry Username or password error");
+                RequestDispatcher rd = request.getRequestDispatcher("/lab6/q2/index.jsp");
+                rd.include(request,response);
+            }
+            else {
+                RequestDispatcher rd = request.getRequestDispatcher("WelcomeServlet");
+                rd.forward(request,response);
+            }
          } catch (SQLException e) {
             throw new RuntimeException(e);
         }
