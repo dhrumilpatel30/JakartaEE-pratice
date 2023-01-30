@@ -28,7 +28,7 @@ public class ValidateServlet extends HttpServlet {
                 rd.include(request,response);
             }
             else {
-                RequestDispatcher rd = request.getRequestDispatcher("WelcomeServlet");
+                RequestDispatcher rd = request.getRequestDispatcher("/WelcomeServlet");
                 rd.forward(request,response);
             }
          } catch (SQLException e) {
