@@ -10,8 +10,7 @@ import java.io.PrintWriter;
 @WebServlet(name = "WelcomeServlet", value = "lab6/q2/WelcomeServlet")
 public class WelcomeServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRe
-                                     quest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         String username = request.getParameter("username");
         out.println("Welcome  "+username);
