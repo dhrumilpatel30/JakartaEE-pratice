@@ -11,6 +11,8 @@ public class SearchOnGoogleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String GOOGLE_SEARCH_URL = "https://www.google.com/search";
+        String searchTerm = request.getParameter("search");
+        String searchURL = GOOGLE_SEARCH_URL + "?q="+searchTerm;
 
     }
 
