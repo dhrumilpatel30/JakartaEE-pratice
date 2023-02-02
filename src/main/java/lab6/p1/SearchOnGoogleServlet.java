@@ -13,7 +13,6 @@ import java.io.IOException;
 public class SearchOnGoogleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         String searchTerm = request.getParameter("search");
         String searchURL = "https://www.google.com/search?q="+searchTerm;
         Document doc =  Jsoup.connect(searchURL).userAgent("Mozilla/5.0").get();
