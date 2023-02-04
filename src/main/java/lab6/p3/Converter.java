@@ -37,15 +37,16 @@ public class Converter {
         this.from_value = from_value;
     }
     public double getAns(){
-        if(data == "length" && from_unit == "meter"){
+        if(data.equals("length") && from_unit.equals("meter") && to_unit.equals("centimeter")){
             return from_value*100;
-        } else if (data == "length" && from_unit == "inch") {
+        } else if (data.equals("length") && from_unit.equals("inch") && to_unit.equals("centimeter")) {
             return from_value*2.54;
-        } else if (data == "temp" && from_unit == "celsius") {
+        } else if (data.equals("temp") && from_unit.equals("celsius") && to_unit.equals("fahrenheit")) {
             return (from_value*9/5)+32;
         }
         else {
             return -1;
         }
+//        return data+from_unit+to_unit+from_value;
     }
 }
