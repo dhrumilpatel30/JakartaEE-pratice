@@ -35,12 +35,12 @@
             if(c.getName().equals("cnt"))cnt=c.getValue();
         }
     }
-    if(null == cnt)count = 1;
+    if(null == cnt)count = 0;
     else { count = Integer.parseInt(cnt);}
-    Cookie cnew = new Cookie("cnt",String.valueOf(count));
-    cnew.setMaxAge(60*60*24);
+    Cookie cnew = new Cookie("cnt",String.valueOf(count+1));
+    if(0 == count)cnew.setMaxAge(60*60*24);
     response.addCookie(cnew);
 %>
-<h3>Number of Forms Submitted Today:<%= count%></h3>
+<h3>Number of Forms Submitted Today:<%= count + 1%></h3>
 </body>
 </html>

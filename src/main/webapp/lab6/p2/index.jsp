@@ -8,13 +8,13 @@
 <form method="post" action="result.jsp">
     <label>Full Name:
         <input type="text" name="name">
-    </label>
+    </label><br><br>
     <label>Email:
         <input type="email" name="email">
-    </label>
+    </label><br><br>
     <label>Subject:
         <input type="text" name="subject">
-    </label>
+    </label><br><br>
     <label>Message:
         <textarea name="msg"></textarea>
     </label>
