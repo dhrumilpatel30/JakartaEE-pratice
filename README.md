@@ -1,3 +1,2 @@
 # JakartaEE-pratice
-## Servlets are part of java that is used as backend.
-contains some question practice for related to that
+this repo contains some famous topic examples related to JakartaEE web application like Servlets, JDBC, JSP etc.
