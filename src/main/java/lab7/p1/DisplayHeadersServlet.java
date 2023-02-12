@@ -21,5 +21,7 @@ public class DisplayHeadersServlet extends HttpServlet {
         while (headernames.hasMoreElements()){
             out.print(request.getHeader(headernames.nextElement()) + "<br>");
         }
+        RequestDispatcher rd = request.getRequestDispatcher("index.html");
+        rd.include(request,response);
     }
 }

@@ -7,8 +7,17 @@
 <body>
 <h2>Select option</h2>
 <form action="lab7/p1/DisplayHeadersServlet" method="post">
-  <input type="submit" value="a) Display Request headers">
+  <input type="submit" value="a) Display Request headers"><br>
 </form>
-
+<form action="showHits.jsp" method="post">
+    <input type="submit" value="b) Display the total number of hits"><br>
+</form>
+<form action="setAndObserveHeaders.jsp" method="post">
+    <input type="submit" value="c) jsp that sets response header and observes this header with the response"><br><br>
+</form>
+<form action="countNumberOfWords.jsp" method="post">
+    <input type="text" name="sentence"><br>
+    <input type="submit" value="Count number of Words"><br>
+</form>
 </body>
 </html>
