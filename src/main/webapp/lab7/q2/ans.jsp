@@ -5,8 +5,8 @@
       <title>Ans</title>
 </head>
 <body>
-<jsp:useBean id="obj" class="lab6.q3.Calculator" />
-<jsp:setProperty name="obj" property="*" />
-<h2>Ans = <%= obj.calc() %></h2>
+      <jsp:useBean id="obj" class="lab7.q2.Calculator" />
+      <jsp:setProperty name="obj" property="*" />
+      <h2>Ans = <%= obj.calc() %></h2>
 </body>
 </html>
