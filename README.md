@@ -12,6 +12,16 @@ This repo contains some famous topic examples related to JakartaEE web applicati
 
 #### Note: you may need to connect local mysql db for some examples.
 
+## Table of Contents
+
+- [Basic JavaEE](#basic-javaee)
+- [Beans](#beans)
+- [Session Management](#session-management)
+
+#### [For basic java examples go here](https://github.com/dhrumilpatel30/java-helper)
+
+#### [For amazing spring boot and hibernate project go here](https://github.com/dhrumilpatel30/TestZone)
+
 ## Topics
 
 ### Basic JavaEE
@@ -21,6 +31,8 @@ This repo contains some famous topic examples related to JakartaEE web applicati
 - [Servlet handling form data validation](./src/main/java/lab6/q2/ValidateServlet.java)
 - [Servlet for showing Response](./src/main/java/lab6/q2/WelcomeServlet.java)
 - [Using external Service(JSOUP)](./src/main/java/lab6/p1/SearchOnGoogleServlet.java)
+- [Request headers](./src/main/java/lab7/p1/DisplayHeadersServlet.java)
+- [Response headers](./src/main/webapp/lab7/p1/setAndObserveHeader.jsp)
 
 ### Beans
 
@@ -32,3 +44,15 @@ This repo contains some famous topic examples related to JakartaEE web applicati
 - [Bean for Unit conversion](./src/main/java/lab6/p3/Converter.java)
 - [usage of bean 1](./src/main/webapp/lab6/p3/index.jsp)
 - [usage of bean 2](./src/main/webapp/lab6/p3/calculate.jsp)
+- [Book bean](./src/main/java/lab7/q3/Book.java)
+- [Select book](./src/main/webapp/lab7/q3/Genre.html)
+- [Book view with jsp](./src/main/webapp/lab7/q3/DisplayTheList.jsp)
+- [Controller servlet for book](./src/main/java/lab7/q3/ControllerServlet.java)
+
+### Session Management
+
+- [Session management using servlet](./src/main/java/lab7/q1/LoginVerifierServlet.java)
+- [login for session creation](./src/main/webapp/lab7/q1/Login.html)
+- [welcome page for session](./src/main/webapp/lab7/q1/first.jsp)
+- [another page for session](./src/main/webapp/lab7/q1/second.jsp)
+- [logout for session](./src/main/webapp/lab7/q1/logout.jsp)
